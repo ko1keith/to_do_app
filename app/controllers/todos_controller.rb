@@ -19,6 +19,12 @@ class TodosController < ApplicationController
     @todo = Todo.find(params[:id])
   end
 
+  def edit
+    @todo = Todo.find(params[:id])
+
+    
+  end
+
 
   private
     #whitelist what the form is allowed to recieve
