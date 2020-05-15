@@ -31,9 +31,10 @@ class TodosController < ApplicationController
     else
       render "edit"
     end
-    # test comment
-    # another change
-    # one last test
+  end
+
+  def index
+    @todos = Todo.all
   end
 
 

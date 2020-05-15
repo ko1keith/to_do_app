@@ -4,7 +4,7 @@
   <h2>The following errors precented the todo from being saved</h2>
   <ul>
     <% @todo.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>  
+      <li><%= msg %></li>
     <%end%>
   </ul>
 <% end %>
@@ -24,3 +24,5 @@
     <%= f.submit %>
   </p>
 <% end %>
+
+<%= link_to "Back", todos_path %>
